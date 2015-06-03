@@ -4,6 +4,7 @@ class Book
         @name = name
         @author = author
         @page_number = page_number
+        @isBooked = false
     end
     
     def to_s
@@ -31,9 +32,11 @@ end
 
 def borrow
 	puts "Enter the name of the book you want to borrow."
-	bor_book = gets.chomp
-	@books.delete(bor_book)
-	
+	name = get.chomp
+  	@books.each do |book|
+   	if book.name = name
+   		book.isBooked = true
+	end
 end
 
 
