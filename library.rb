@@ -32,7 +32,7 @@ end
 
 def borrow
 	puts "Enter the name of the book you want to borrow."
-	name = get.chomp
+	name = gets.chomp
   	@books.each do |book|
    	if book.name = name
    		book.isBooked = true
