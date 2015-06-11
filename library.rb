@@ -7,8 +7,11 @@ class Book
         @isBooked = false
     end
     
+    attr_accessor :name
+    attr_accessor :isBooked
+    
     def to_s
-        "Book: #{@name}--#{@author}--#{@page_number}"
+        "Book: #{@name}--#{@author}--#{@page_number}--#{@isBooked}"
     end
     
 end
